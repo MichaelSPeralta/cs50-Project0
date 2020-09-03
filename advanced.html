@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Search</title>
     </head>
     <body>
@@ -10,7 +11,10 @@
             <a href="./img.html">Images</a>
         </div>
         <form action="https://www.google.com.ar/imghp?hl=es&tab=ri&ogbl/search"> 
-            <input type="text" name="q">
+            <div class="input-container">
+                <i class="fa fa-search icon"></i>
+                <input type="text" name="q">
+            </div>
             <input type="submit" value="Google Advanced Search">
         </form>
     </body>

@@ -13,12 +13,12 @@ body {
     margin-right: 3%;
     margin-top: 1%;
     a {
-      margin-right: 0.5%;
+      margin-right: 2%;
       text-decoration: none;
     }
- 
+
     a:visited {
-      color: blue;
+      color: black;
     }
 
     a:hover {
@@ -26,16 +26,56 @@ body {
     }
 
     a:active {
-      color: black;
+      color: rgb(44, 74, 207);
     }
   }
+
   form {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10%;
-    
     input {
-      margin-right: 0.3%;
+        margin-right: 0.3%;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: rgb(221, 219, 219);
+        border: 1px solid rgb(221, 219, 219);
+      }
+    .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        width: 50%;
+        background-color: rgb(221, 219, 219);
+        border-radius: 15px;
+        i{
+            // position: absolute;
+            margin: 0 12px;
+            color: rgb(160, 160, 160);
+        }
+        
+        input[type="text"]{
+            width: 100%;
+            padding: 13px 0;
+        }
+        input[type="text"]:focus {
+          outline: none;
+
+        }
+    }
+
+
+    input[type="submit"]:focus {
+      outline: none;
+      border: 1px solid rgb(207, 150, 44);
+    }
+    input[type="submit"] {
+      background-color: rgb(214, 180, 68);
+      color: #fff;
+      // font-style: oblique;
+      font-size: large;
     }
   }
 }
